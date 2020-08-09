@@ -1,0 +1,16 @@
+### requisição get sem parametros
+GET http://localhost:3000/users HTTP/1.1
+
+### requisição get com parametro "route param"
+GET http://localhost:3000/users/34 HTTP/1.1
+
+### requisição get com parametro query
+GET http://localhost:3000/user?id=10&uf=MT HTTP/1.1
+
+
+
+### POST, submetendo valores para registro
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+ { "name": "Antonio Aguiar", "age": "50" }

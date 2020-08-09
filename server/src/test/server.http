@@ -1,0 +1,39 @@
+### requisição post para criar classes
+POST http://localhost:3001/classes HTTP/1.1
+content-type: application/json
+
+{
+    "name":"Antonio Aguiar",
+    "avatar": "https://avatars1.githubusercontent.com/u/246677?s=60&v=4",
+    "whatsapp": "65993300303",
+    "bio": "Analista desenvolvedor...",
+    "subject": "Geografia",
+    "cost":"R$ 50,00",
+    "schedule":[
+        {"week_day": 1, "from": "8:00", "to": "12:00"},
+        {"week_day": 2, "from": "10:00", "to": "12:00"},
+        {"week_day": 3, "from": "10:00", "to": "12:00"},
+        {"week_day": 4, "from": "14:00", "to": "16:00"},
+        {"week_day": 5, "from": "13:00", "to": "15:00"}        
+    ]
+}
+
+### Consultar registro de classes com passagem de parametros nomeados
+GET http://localhost:3001/classes?time=10:00&subject=Matematica&week_day=0  HTTP/1.1
+
+
+### Consultar registro de classes com passagem de parametros nomeados
+GET http://localhost:3001/proffy/9  HTTP/1.1
+
+
+
+### Registrar uma nova conexão
+POST http://localhost:3001/connections  HTTP/1.1
+content-type: application/json
+
+{
+    "user_id":1
+}
+
+### Consultar registro total de conexões
+GET http://localhost:3001/connections  HTTP/1.1

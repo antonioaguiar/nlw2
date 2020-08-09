@@ -1,0 +1,8 @@
+### Consultar registro de classes com passagem de parametros nomeados
+POST https://hubservices.abaco.com.br/servicos/rest/servicos/dne/getLogradouroPorCep   HTTP/1.1
+content-type: application/json
+
+{
+    "Cep": "78030435",
+    "TOKEN": "A965E38B076C113A73CAD69C507CBDA3"
+}
